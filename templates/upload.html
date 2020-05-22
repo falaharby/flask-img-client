@@ -1,6 +1,39 @@
-    <title>Upload new File</title>
-    <h1>Upload new File</h1>
-    <form action="/uploader" method="POST" enctype="multipart/form-data">
-      <input type=file name=file>
-      <input type=submit value=Kirim>
-    </form>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/my.css">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Cabin&display=swap" rel="stylesheet">
+    <title>Upload Your File</title>
+</head>
+
+<body>
+    <div class="header">
+        <div class="header-left">
+            <span>falah<span class="arby">arby</span></span>
+        </div>
+        <div class="header-right">
+            <a href="https://imgserverfalah.pythonanywhere.com">GO TO SERVER</a>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="content-title">
+            <h1>Upload</h1>
+            <h1>Your Image</h1>
+        </div>
+        <div class="form-input">
+            <form action="/uploader" method="POST" enctype="multipart/form-data">
+                <input type=file name=file>
+                <br><br><br>
+                <input class="btn-submit" type=submit value=Submit>
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>
