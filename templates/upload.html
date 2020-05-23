@@ -7,30 +7,35 @@
     <link rel="stylesheet" href="/static/my.css">
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Cabin&display=swap" rel="stylesheet">
-    <title>Upload Your File</title>
+    <title>Client Image Transfer</title>
 </head>
 
 <body>
     <div class="header">
-        <div class="header-left">
-            <span>falah<span class="arby">arby</span></span>
-        </div>
-        <div class="header-right">
-            <a href="https://imgserverfalah.pythonanywhere.com">GO TO SERVER</a>
+        <div class="container">
+            <div class="header-left">
+                <span>falah<span class="arby">arby</span></span>
+            </div>
+            <div class="header-right">
+                <a href="https://imgserverfalah.pythonanywhere.com">GO TO SERVER</a>
+            </div>
         </div>
     </div>
 
     <div class="content">
-        <div class="content-title">
-            <h1>Upload</h1>
-            <h1>Your Image</h1>
-        </div>
-        <div class="form-input">
-            <form action="/uploader" method="POST" enctype="multipart/form-data">
-                <input type=file name=file>
-                <br><br><br>
-                <input class="btn-submit" type=submit value=Submit>
-            </form>
+        <div class="container">
+            <div class="content-title">
+                <h1>Upload</h1>
+                <h1>Your Image</h1>
+            </div>
+            <div class="form-input">
+                <form action="/uploader" method="POST" enctype="multipart/form-data">
+                    <input type=file name=file>
+                    <br><br><br>
+                    <input class="btn-submit" type=submit value=Submit>
+                </form>
+            </div>
+            <a class="btn-submit goto" href="https://imgserverfalah.pythonanywhere.com">GO TO SERVER</a>
         </div>
     </div>
 
